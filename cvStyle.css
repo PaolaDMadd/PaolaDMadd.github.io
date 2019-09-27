@@ -109,6 +109,7 @@ body {
   line-height: 1;
   width: 90%;
   margin: auto;
+  background-color:#8791AC; 
 }
 ol,
 ul {
@@ -215,7 +216,7 @@ footer {
 .column3{
 	margin-right: 0%;
 }
-#feature,
+.feature
 article {
   height: 10em;
   margin-bottom: 1em;
