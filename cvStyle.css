@@ -109,7 +109,7 @@ body {
   line-height: 1;
   width: 90%;
   margin: auto;
-  background-color:#8791AC;
+  background-color: #d4cbc4;
 }
 ol,
 ul {
@@ -159,6 +159,7 @@ p {
   font-variant: normal;
   font-weight: 400;
   line-height: 20px;
+  padding:0.1em;
 }
 blockquote {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -189,14 +190,14 @@ pre {
 }
 
 nav,
-#feature ,
+#feature,
 footer,
 {
   margin: 1%;
 }
 nav,
 footer {
-  background-color: #94b8b8;
+  background-color: #6c9389;
   padding: 0.5em 0;
 	text-align: center;
 }
@@ -220,9 +221,14 @@ footer {
 article {
   height: 10em;
   margin-bottom: 1em;
-  background-color: #efefef;
+  background-color: #95b1aa;
 }
 li {
   display: inline;
   padding: 0.5em;
+  border: 0.05em solid #6c9389;
+  border-radius: 0.2em;
+  text-decoration: none;
+  background-color: #d4cbc4;
+  text-decoration-color: #6c9389;
 }
