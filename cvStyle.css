@@ -90,6 +90,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -231,4 +232,13 @@ li {
   text-decoration: none;
   background-color: #d4cbc4;
   text-decoration-color: #6c9389;
+}
+
+.btn :hover{
+  box-shadow: 0.4em 0.4em 1.25em #6c9389 inset;
+  background: transparent;
+  transition duration: 2.5s;
+  transition-delay: 1s;
+  transform: rotateY(360deg);
+  cursor: pointer;
 }
