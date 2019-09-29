@@ -160,7 +160,7 @@ p {
   font-variant: normal;
   font-weight: 400;
   line-height: 20px;
-  padding:0.1em;
+  padding:0.3em;
 }
 blockquote {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -198,7 +198,7 @@ footer,
 }
 nav,
 footer {
-  background-color: #6c9389;
+  background-color: #d4cbc4;
   padding: 0.5em 0;
 	text-align: center;
 }
@@ -211,6 +211,7 @@ footer {
   width: 33%;
   float: left;
   margin: 1%;
+  overflow: scroll;
 }
 .column1{
 	margin-left: 0%;
@@ -220,20 +221,22 @@ footer {
 }
 .feature,
 article {
-  height: 10em;
+  height: 11em;
   margin-bottom: 1em;
   background-color: #95b1aa;
 }
-li {
+.button{
   display: inline;
   padding: 0.5em;
   border: 0.05em solid #6c9389;
   border-radius: 0.2em;
   text-decoration: none;
   background-color: #d4cbc4;
-  text-decoration-color: #6c9389;
+  text-decoration-color: white;
 }
-
+.pitch1, h3{
+  padding: 0.5em;
+}
 .btn :hover{
   box-shadow: 0.4em 0.4em 1.25em #6c9389 inset;
   background: transparent;
@@ -241,4 +244,13 @@ li {
   transition-delay: 1s;
   transform: rotateY(360deg);
   cursor: pointer;
+}
+li{
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding:0.3em;
 }
