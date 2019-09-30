@@ -161,7 +161,12 @@ p {
   font-weight: 400;
   line-height: 20px;
   padding:0.3em;
+
 }
+.bold{
+  font-weight: bold;
+}
+
 blockquote {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 21px;
@@ -251,7 +256,7 @@ article {
   background: transparent;
   transition duration: 2.5s;
   transition-delay: 1s;
-  transform: rotateY(360deg);
+  transform: rotatey(360deg);
   cursor: pointer;
 }
 li{
