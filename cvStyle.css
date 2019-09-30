@@ -237,6 +237,15 @@ article {
 .pitch1, h3{
   padding: 0.5em;
 }
+
+.pitch1{
+  text-align: justify;
+  padding-top: 1em;
+  max-height: 200px;
+  min-height: 150px;
+  overflow: scroll;
+}
+
 .btn :hover{
   box-shadow: 0.4em 0.4em 1.25em #6c9389 inset;
   background: transparent;
