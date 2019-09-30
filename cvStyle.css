@@ -217,6 +217,7 @@ footer {
   float: left;
   margin: 1%;
   overflow: scroll;
+  display: list-item;
 }
 .column1{
 	margin-left: 0%;
@@ -275,4 +276,12 @@ li{
 .page2{
   padding: 3em;
   border: 0.5em solid #95b1aa;
+}
+.page2 p{
+  text-align: justify;
+}
+.page3{
+  width:inherit;
+  margin-top: 0.8em;
+  background-color: #95b1aa;
 }
