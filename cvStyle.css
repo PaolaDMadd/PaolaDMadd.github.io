@@ -252,11 +252,11 @@ article {
 }
 
 .btn :hover{
-  box-shadow: 0.4em 0.4em 1.25em #6c9389 inset;
+  box-shadow: 0.4em 0.4em 1em #6c9389 inset;
   background: transparent;
   transition duration: 2.5s;
   transition-delay: 1s;
-  transform: rotatey(360deg);
+  transform: rotateY(360deg);
   cursor: pointer;
 }
 li{
@@ -267,4 +267,12 @@ li{
   font-weight: 400;
   line-height: 20px;
   padding:0.3em;
+}
+.title2{
+  text-align: center;
+}
+
+.page2{
+  padding: 3em;
+  border: 0.5em solid #95b1aa;
 }
