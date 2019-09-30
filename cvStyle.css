@@ -285,3 +285,7 @@ li{
   margin-top: 0.8em;
   background-color: #95b1aa;
 }
+img{
+  width: auto;
+  size: 700px;
+}
