@@ -107,9 +107,10 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1em;
   width: 90%;
-  margin: auto;
+  paddin: 0;
+  margin: 0 auto;
   background-color: #d4cbc4;
 }
 ol,
@@ -231,15 +232,7 @@ article {
   margin-bottom: 1em;
   background-color: #95b1aa;
 }
-.button{
-  display: inline;
-  padding: 0.5em;
-  border: 0.05em solid #6c9389;
-  border-radius: 0.2em;
-  text-decoration: none;
-  background-color: #d4cbc4;
-  text-decoration-color: white;
-}
+
 .pitch1, h3{
   padding: 0.5em;
 }
@@ -252,11 +245,21 @@ article {
   overflow: scroll;
 }
 
+.button{
+  display: inline-block;
+  padding: 0.5em;
+  border: 0.05em solid #6c9389;
+  border-radius: 0.2em;
+  text-decoration: none;
+  background-color: #d4cbc4;
+  text-decoration-color: white;
+}
+
 .btn :hover{
   box-shadow: 0.4em 0.4em 1em #6c9389 inset;
   background: transparent;
-  transition duration: 2.5s;
-  transition-delay: 1s;
+  transition-duration: 3s;
+  transition-delay: 0.5s;
   transform: rotateY(360deg);
   cursor: pointer;
 }
@@ -281,11 +284,92 @@ li{
   text-align: justify;
 }
 .page3{
-  width:inherit;
+  width: auto;
   margin-top: 0.8em;
   background-color: #95b1aa;
 }
-img{
-  width: auto;
-  size: 700px;
+
+#Contact{
+padding: 3em;
+border: 0.5em solid #95b1aa;
+}
+
+.carousel_container{
+  overflow: hidden;
+	width: 100%;
+	max-width: 300px;
+  margin: auto;
+	position: relative;
+  /* border-radius: 1em; */
+}
+.carousel-slide{
+	display:inline-flex;
+  /* width: 100%;
+  height: 550px; */
+}
+
+.carouselImg {
+   width: 100%;
+}
+
+i {
+  border: solid #003865;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+
+}
+
+#playBTN, #pauseBTN{
+  display: inline-block;
+  /* padding: 0.5em; */
+  border: 0.05em solid #d4cbc4;
+  border-radius: 0.2em;
+  background-color: #95b1aa;
+}
+#playBTN :hover{
+  box-shadow: 0.4em 0.4em 1em #6c9389 inset;
+  background: transparent;
+  transition-duration: 3s;
+  transition-delay: 0.5s;
+  cursor: pointer;
+}
+
+#pauseBTN :hover{
+box-shadow: 0.4em 0.4em 1em #6c9389 inset;
+background: transparent;
+transition-duration: 3s;
+transition-delay: 0.5s;
+cursor: pointer;
+float:right;
+}
+/* Remember to change top value once the final page is set */
+.arrowLeft {
+  -webkit-transform: rotate(135deg);
+		position: absolute;
+		top: 300%;
+		z-index: 10;
+		left: 5%;
+		cursor: pointer;
+}
+.arrowRight {
+  -webkit-transform: rotate(-45deg);
+	position:absolute;
+	top: 300%;
+	z-index: 10;
+	right: 5%;
+	cursor: pointer;
+}
+
+#map{
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+  justify-content: center;
+  align-items: center;
+
+  width: 700px;
+  height: 600px;
 }
