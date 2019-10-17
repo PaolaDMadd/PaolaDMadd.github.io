@@ -1,11 +1,5 @@
-  $(document).ready(function() {
-  $("body").noisy ({
-    intensity: 0.2,
-    size: 200,
-    opacity: 0.28,
-    randomColors: false, // true by default
-    color: "#000000"
-  });
+
+
 
   function init() {
     var startPoint = new google.maps.LatLng(51.515825, -0.088057);
@@ -50,5 +44,5 @@
     });
   }
 
-  google.maps.event.addDomListener(window, "load", initialize);
-});
+//   google.maps.event.addDomListener(window, "load", initialize);
+// });
