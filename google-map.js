@@ -19,10 +19,10 @@ function init(){
 
   var venueMap = new google.maps.Map(document.getElementById('map'), mapOptions);
   //CalloutContent
-  var contentString = 'https://www.google.com/maps/d/u/0/embed?mid=1Vp0W1_0veGtRR4-Eqga3ez98C2AgWYDA" width="640" height="480"';
+  var contentString = 'https://www.google.com/maps/d/u/0/embed?mid=1Vp0W1_0veGtRR4-Eqga3ez98C2AgWYDA';
   var infoWindow= new google.maps.InfoWindow({
     content: contentString,
-    maxWidth: 600
+    maxWidth: 500
   });
 
 //marker
