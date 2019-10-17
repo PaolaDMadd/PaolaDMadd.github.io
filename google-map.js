@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $("body").noisy({
+  $(document).ready(function() {
+  $("body").noisy ({
     intensity: 0.2,
     size: 200,
     opacity: 0.28,
@@ -15,7 +15,7 @@ $(document).ready(function() {
       zoom: 13,
       center: startPoint,
       mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
+    }
 
     var venueMap = new google.maps.Map(
       document.getElementById("map"),
@@ -34,7 +34,7 @@ $(document).ready(function() {
       position: startPoint,
       map: map,
       icon: imagePath,
-      title: "image title"
+      title: 'image title'
     });
 
     google.maps.event.addListener(marker, "click", function() {
