@@ -1,16 +1,50 @@
+$( document ).ready( function() {
+
+$('body').noisy({
+    intensity: 0.2,
+    size: 200,
+    opacity: 0.28,
+    randomColors: false, // true by default
+    color: '#000000'
+});
 
 function init(){
-  var mapOptions = {
-    center: new google.maps.LatLng(51.514081, -0.103714),
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    zoom: 13
-  };
+    var startPoint = new google.maps.LatLng(51.515825, -0.088057);
+    var imagePath = 'http://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png'
+    var maoOptions = {
+      zoom 13,
+      center: startPoint,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+
   var venueMap = new google.maps.Map(document.getElementById('map'), mapOptions);
+  //CalloutContent
+  var contentString = 'https://www.google.com/maps/d/u/0/embed?mid=1Vp0W1_0veGtRR4-Eqga3ez98C2AgWYDA" width="640" height="480"';
+  var infoWindow= new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 600
+  });
+
+//marker
+  var marker = new google.maps.Marker({
+    position: startPoint,
+    map: map,
+    icon: imagePath
+    title: "image title"
+  });
+
+  google.maps.event.addListener(marker, "click" , function(){
+    infowindow.open(map,marker);
+  });
+
+  // Resize function
+
+  google.maps.event.addDomListener(window, "resize", function(){
+    var center = map.getCenter();
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(center);
+  });
 }
 
-function loadScript(){
-  var script = document.createElement('script');
-  script.src= 'https://www.google.com/maps/d/u/0/embed?mid=1Vp0W1_0veGtRR4-Eqga3ez98C2AgWYDA"';
-  document.body.appendChild(script);
-window.onload = loadScript;
-}
+google.maps.event.addDomListener(window, "load", initialize);
+});

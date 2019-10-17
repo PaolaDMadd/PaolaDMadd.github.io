@@ -304,8 +304,7 @@ border: 0.5em solid #95b1aa;
 }
 .carousel-slide{
 	display:inline-flex;
-  /* width: 100%;
-  height: 550px; */
+padding-top: 0.5em;
 }
 
 .carouselImg {
@@ -326,6 +325,9 @@ i {
   border: 0.05em solid #d4cbc4;
   border-radius: 0.2em;
   background-color: #95b1aa;
+  margin-left: auto;
+  margin-right: auto;
+  width: 49%;
 }
 #playBTN :hover{
   box-shadow: 0.4em 0.4em 1em #6c9389 inset;
@@ -361,17 +363,21 @@ float:right;
 	cursor: pointer;
 }
 
+#map_wrap{
+  position: relative;
+  background-color: red;  /* Remember to take this out */
+}
 #map{
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-
   justify-content: center;
   align-items: center;
-
   width: 700px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  position:relative;
+
 }
