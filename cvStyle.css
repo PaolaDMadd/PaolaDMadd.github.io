@@ -300,7 +300,8 @@ border: 0.5em solid #95b1aa;
 	max-width: 300px;
   margin: auto;
 	position: relative;
-  /* border-radius: 1em; */
+
+
 }
 .carousel-slide{
 	display:inline-flex;
@@ -365,7 +366,7 @@ float:right;
 
 #map_wrap{
   position: relative;
-  background-color: red;  /* Remember to take this out */
+
 }
 #map{
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -374,8 +375,6 @@ float:right;
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
   justify-content: center;
   align-items: center;
-  /* width: 700px;
-  height: 600px; */
   margin-left: auto;
   margin-right: auto;
   position:relative;
