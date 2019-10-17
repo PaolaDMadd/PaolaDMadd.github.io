@@ -372,4 +372,6 @@ float:right;
 
   width: 700px;
   height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
