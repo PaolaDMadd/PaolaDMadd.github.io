@@ -165,8 +165,8 @@ p {
 }
 .mapParagraph{
   border: 0.3em double #d4cbc4;
-  margin-left: auto;
-  width: 45%;
+  margin-left: 5%;
+  width: auto;
   text-align: justify;
   padding: 1em;
 }
@@ -266,8 +266,8 @@ article {
 .btn :hover{
   box-shadow: 0.4em 0.4em 1em #6c9389 inset;
   background: transparent;
-  transition-duration: 3s;
-  transition-delay: 0.5s;
+  transition-duration: 8s;
+  transition-delay: 5s;
   transform: rotateY(360deg);
   cursor: pointer;
 }
@@ -374,9 +374,13 @@ float:right;
 
 #map_wrap{
   position: relative;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   margin: 1em auto;
+
+  #divMapParagraph {
+    height: 50%;
+  }
 
 }
 #map{
