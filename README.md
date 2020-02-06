@@ -1,3 +1,3 @@
 # paoladmadd.github.io
 Presentation prototype 
-content CV
+based on personal CV
