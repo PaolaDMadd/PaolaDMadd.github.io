@@ -1,3 +1,2 @@
-# paoladmadd.github.io
-Presentation prototype 
+Presentation website prototype 
 based on personal CV
